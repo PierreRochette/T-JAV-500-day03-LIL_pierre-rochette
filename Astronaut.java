@@ -14,7 +14,7 @@ public class Astronaut {
         lastId++;
         this.snacks = 0;
         this.destination = null;
-        System.out.println(name + " ready for lunch!");
+        System.out.println(name + " ready for launch!");
     }
 
     public String getName() {
