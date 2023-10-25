@@ -43,7 +43,7 @@ public class Astronaut {
         } else if (mission instanceof chocolate.Mars) {
             chocolate.Mars marsMission = (chocolate.Mars) mission;
             int marsId = marsMission.getId();
-            System.out.println(name + ": Thanks for this Mars number " + marsId);
+            System.out.println(name + ": Thanks for this mars number " + marsId);
             snacks++;
         }
 
