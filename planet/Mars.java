@@ -2,7 +2,7 @@ package planet;
 
 public class Mars {
 
-    private final String landingSite;
+    private String landingSite;
 
     public Mars (String landingSite) {
         this.landingSite = landingSite;

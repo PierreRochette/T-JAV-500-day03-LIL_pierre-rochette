@@ -3,8 +3,8 @@ import planet.*;
 
 public class Astronaut {
     private static int lastId=0;
-    private final int id;
-    private final String name;
+    private int id;
+    private String name;
     private int snacks;
     private String destination;
 
@@ -36,6 +36,8 @@ public class Astronaut {
     public void doActions(Object mission) {
         if (mission == null) {
             System.out.println(name + ": Nothing to do.");
+        } else if (mission instanceof planet.Mars) {
+            planet.Mars marsMission  =
         }
     }
 
