@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Team {
 
     private String name;
@@ -49,6 +48,12 @@ public class Team {
 
             }
             System.out.println();
+        }
+    }
+
+    public void doActions(Object mission) {
+        if (mission == null) {
+            System.out.println(name + ": Nothing to do.");
         }
     }
 
