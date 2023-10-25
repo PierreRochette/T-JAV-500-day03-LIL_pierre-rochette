@@ -37,8 +37,18 @@ public class Astronaut {
         if (mission == null) {
             System.out.println(name + ": Nothing to do.");
         } else if (mission instanceof planet.Mars) {
-            planet.Mars marsMission  =
+            planet.Mars marsMission = (planet.Mars) mission;
+            destination = marsMission.getLandingSite();
+            System.out.println(name + ": Started a mission!");
+        } else if (mission instanceof chocolate.Mars) {
+            chocolate.Mars marsMission = (chocolate.Mars) mission;
+            int marsId = marsMission.getId();
+            System.out.println(name + ": Thanks for this Mars number " + marsId);
+            snacks++;
+        }
+
+        if (destination == null) {
+            System.out.println(name + ": I may have done nothing, but I have " + snacks + " Mars to eat at least!");
         }
     }
-
 }
