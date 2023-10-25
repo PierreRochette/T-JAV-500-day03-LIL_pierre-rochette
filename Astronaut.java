@@ -1,3 +1,6 @@
+import chocolate.*;
+import planet.*;
+
 public class Astronaut {
     private static int lastId=0;
     private final int id;
@@ -28,6 +31,12 @@ public class Astronaut {
 
     public int getSnacks() {
         return snacks;
+    }
+
+    public void doActions(Object mission) {
+        if (mission == null) {
+            System.out.println(name + ": Nothing to do.");
+        }
     }
 
 }
